@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+
+    function validaEmail() {
+
+    var email = document.getElementById('email');
+        let dominio;
+    email.split("@")[1] === dominio ;
+
+
+        if (dominio === !"@museu.com" ) {
+    alert('Digite um e-mail valido!!');
+    }
+    }
+    </script>
+    const checkEmailDomain = (emailAddress, domain) => {
+    return emailAddress.split("@")[1] === domain
+    }
+
+    checkEmailDomain("vini@gmail.com", "gmail.com")
+    // true
+
+    checkEmailDomain("vini@gmail.com", "yahoo.com")
+    // false
+</head>
+<body>
+<form name="login">
+    <h3>Formulário de Login:</h3>
+
+                E-mail:
+                <input type="text" name="email" id="email">
+                Senha: <input type="password" name="senha">
+                <input type="submit" onclick="validaEmail(email)"/>
+
+</form>
+</body>
+</html>
