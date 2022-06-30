@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museus do Mundo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!-- função JavaScript para mudar imagem do ícone ao mover cursor sobre menus -->
+    <script>
+        function mudaImagem(imagem) {
+            document.getElementById("icone").src = imagem;
+        }
+    </script>
+</head>
+<body>
+<header>
+    <img src="./imagens/mapa.png"  id="icone" alt="Mapa Mundi">
+    <h1>Museus do Mundo</h1>
+    <h3>Viagem pelos Continentes e seus Principais Museus</h3>
+</header>
+<nav>
+    <!-- menu hamburguer -->
+    <label for="hamburguer">&#9776;</label> <!-- &#9776; = ícone menu hamburguer -->
+    <input type="checkbox" id="hamburguer">
+    <div id="hamitems"> <!-- ítens menu hamburguer -->
+        <a href="index.html" onmouseover="mudaImagem('imagens/mapa.png')" onmouseout="mudaImagem('imagens/mapa.png')">HOME</a>
+        <a href="africa.html" onmouseover="mudaImagem('imagens/africa.png')" onmouseout="mudaImagem('imagens/mapa.png')">ÁFRICA</a>
+        <a href="america.html" onmouseover="mudaImagem('imagens/america.png')" onmouseout="mudaImagem('imagens/mapa.png')">AMÉRICA</a>
+        <a href="asia.html" onmouseover="mudaImagem('imagens/asia.png')" onmouseout="mudaImagem('imagens/mapa.png')">ÁSIA</a>
+        <a href="europa.html" onmouseover="mudaImagem('imagens/europa.png')" onmouseout="mudaImagem('imagens/mapa.png')">EUROPA</a>
+        <a href="oceania.html" onmouseover="mudaImagem('imagens/oceania.png')" onmouseout="mudaImagem('imagens/mapa.png')">OCEANIA</a>
+        <a href="#">Contato</a>
+    </div>
+</nav>
+<main>
+    <section id="principal" class="col-8">
+
+            <h2>Mapa do Site</h2>
+            <p>Os museus blabla adipisicing elit. Mollitia magnam id accusamus tempore rerum deleniti? Necessitatibus alias quaerat molestias explicabo doloremque magnam vero sit ad dolorem laudantium. Consequatur, dolores aliquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repudiandae eius, tempore dignissimos iste, nobis impedit id ipsam autem aperiam animi, excepturi assumenda necessitatibus magnam eveniet optio ex ea corporis.</p> <br>
+
+       <ol>
+           <li><a href="index.html"> HOME</a></li>
+           <li><a href="africa.html" >ÁFRICA</a></li>
+           <li><a href="america.html">AMÉRICA</a></li>
+           <li><a href="asia.html">ÁSIA</a></li>
+           <li><a href="europa.html"">EUROPA</a></li>
+           <li><a href="oceania.html">OCEANIA</a></li>
+           <li><a href="contatos.html">CONTATO</a></li>
+           <h4 class="direita">Fim seção</h4>
+       </ol>
+    </section>
+
+</main>
+<footer>
+    <p>Desenvolvido por Daniel Fonseca, Débora Peixoto e Estefanie Coleone</p>
+</footer>
+</body>
+</html>
